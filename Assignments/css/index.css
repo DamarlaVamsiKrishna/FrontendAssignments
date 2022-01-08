@@ -1,0 +1,69 @@
+.headings{
+    font-size:25px;
+    font-family:"Roboto";
+    color:navy;
+}
+label{
+    margin: 30px;
+}
+.namecss{
+    margin-left: 10px;
+    border-radius: 4px;
+    border-width: 1px;
+}
+.idcss{
+    margin-left: 32px;
+    border-radius: 4px;
+    border-width: 1px;
+}
+.skillcss{
+    margin-left: 17px;
+    border-radius: 4px;
+    border-width: 1px;
+}
+.salarycss{
+    margin-left: 6px;
+    border-radius: 4px;
+    border-width: 1px;
+}
+.mailcss{
+    margin-left: 4px;
+    border-radius: 4px;
+    border-width: 1px;
+}
+.button_emp{
+    height:26px;
+    width: 90px;
+    border-radius: 6px;
+    border-width: 0px;
+    background-color: rgb(112, 110, 110);
+    color:white;
+    font-family: "roboto";
+    cursor: pointer;
+}
+
+.li_item{
+    font-family: cursive;
+    color:brown;
+    font-size: 17px;
+}
+.deletestyle{
+    font-family: cursive;
+    color: red;
+}
+#netsalary_id{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: brown;
+    font-size: 20px;
+}
+#status_check{
+    font-family: cursive;
+    font-size: 17px;
+    color: brown;
+}
+#checkcontent{
+    font-family: cursive;
+    font-size: 17px;
+    color: brown;
+}

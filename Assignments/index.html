@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div>
+        <h1 class="headings">employee names :</h1>
+        <ol id="employee_names"></ol>
+    </div>
+
+    <div>
+        <h1  class="headings">Give the skill type : <input id="input_skill" type="text" placeholder="Enter the skill"/></h1>
+        <ol id="skill_filter">
+
+        </ol>
+    </div>
+    <div>
+        <h1  class="headings">Employees with hike</h1>
+        <ol id="salary_hike"></ol>
+    </div>
+    <div>
+        <h1  class="headings">Delete employee by id : <input id="delete_id" type="text" placeholder="Enter id"></h1>
+        <span id="delete_employee" class="deletestyle"></span>
+    </div>
+    <div>
+        <h1  class="headings">Net salary of company : </h1>
+        <p id="netsalary_id"></p>
+    </div>
+    
+    <div>
+        <h1  class="headings">Employee present in the list or not : <input id="status_id" type="text" placeholder="Enter id"></h1>
+        <p id="status_check"></p>
+        <button id="clear_button" class="button_emp">clear</button>
+    </div>
+
+    <div>
+            <div>
+                <label >name : </label>
+                <input class="namecss" id= "emp_name" type="text" name="empname"/>
+            </div>
+            <div>
+                <label>id : </label>
+                <input class="idcss" id= "emp_id" type="text" name="empid"/>
+            </div>
+            <div>
+                <label>skill : </label>
+                <input class="skillcss" id= "emp_skill" type="text" name=empskill/>
+            </div>
+            <div>
+                <label>salary : </label>
+                <input class="salarycss" id= "emp_salary" type="text" name="empsal"/>
+            </div>
+            <div>
+                <label>e-mail : </label>
+                <input class="mailcss" id= "emp_mail" type="email" name="empemail"/>
+            </div>
+            <div>
+                <button class="button_emp" onclick="addbutton()" type="submit" id="addbuttonid">Add</button>
+            </div>
+    </div>
+    <div>
+        <h1  class="headings">Internal or external employee</h1>
+        <input type="email" name="email" id="checkmailid"/>
+        <button class="button_emp" id="check">check</button>
+        <p id="checkcontent"></p>
+    </div>
+
+<div style="margin-top: 100px;"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>
