@@ -16,8 +16,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="css/home.css" />
-    <title>Home</title>
+    <link rel="stylesheet" href="css/view.css" />
+    <title>View</title>
   </head>
   <body>
     <div>
@@ -76,54 +76,46 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://127.0.0.1:5500/Assessment/view.html" target="_blank">View</a>
+              <a class="nav-link" href="http://127.0.0.1:5500/Assessment/home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://127.0.0.1:5500/Assessment/remove.html" target="_blank">Remove</a>
+              <a class="nav-link" href="http://127.0.0.1:5500/Assessment/remove.html" >Remove</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://127.0.0.1:5500/Assessment/search.html" target="_blank">Search</a>
+              <a class="nav-link" href="http://127.0.0.1:5500/Assessment/search.html" >Search</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" target="_blank">Bonus</a>
+              <a class="nav-link" href="#">Bonus</a>
             </li>
           </ul>
-          <span class="navbar-text"> </span>
+          <span id="showtime"> </span>
         </div>
       </div>
     </nav>
 
-    <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          
-          <div class="carousel-item">
-            <img src="https://media-exp1.licdn.com/dms/image/C511BAQGj8UOcnp87BQ/company-background_10000/0/1530786854045?e=2159024400&v=beta&t=-2Dx9VqA7sj5O4upOTlxxY3GSX-psWYVZvcyaP4Xpmo" class="d-block w-100 slides" alt="thoughtfocus image">
-          </div>
-          <div class="carousel-item active">
-            <img src="https://media.glassdoor.com/lst2x/0c/f4/32/22/women-power-at-thoughtfocus-bangalore.jpg" class="d-block w-100 slides" alt="thoughtfocus image">
-          </div>
-          <div class="carousel-item">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQALBp2ol0i-qxL4lmtBKMLeC8fCQU7qJaFQw&usqp=CAU" class="d-block w-100 slides" alt="thoughtfocus image">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+
+<div class="emptable mt-5">
+
+    <table class="table table-hover" style="width: 50%;" >
+        <tr>
+            <th>SlNo</th>
+            <th>Eid</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Skill</th>
+            <th>Salary</th>
+        </tr>
+        <tbody id="tableid" class="table-hover">
+
+        </tbody>
+    </table>
+
+
+</div>
       <div style="width: 100%; text-align: center; font-size: 20px;">
         <p style="color: black !important;" class="mt-5 mb-3 text-muted">All rights &copy; <span id="year"></span> </p>
       </div>
      
-    <script src="js/home.js"></script>
+    <script src="js/view.js"></script>
   </body>
 </html>

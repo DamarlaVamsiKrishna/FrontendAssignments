@@ -8,6 +8,11 @@ let floatingconfirmPassword=document.getElementById("floatingconfirmPassword");
 
 let form_register=document.getElementById("form_register");
 
+
+let date=new Date();
+let year=document.getElementById("year");
+year.textContent=date.getFullYear();
+
 function match(){
     let matched=floatingconfirmPassword.value==floatingPassword.value;
         if (matched){
@@ -27,16 +32,16 @@ let address=document.getElementById("address");
 let phnumber=document.getElementById("phnumber");
 
 submitdetails.addEventListener("click",(event)=>{
-
-    if(floatingInput.value=="" || floatingInput.value==null){
+    event.preventDefault();
+    if(floatingInput.value=="" || floatingInput.value==undefined){
         user_warning.textContent="*Username field required";
         event.preventDefault();
     }
-    if(floatingPassword.value=="" || floatingPassword==null){
+    if(floatingPassword.value=="" || floatingPassword==undefined){
         pass_warning.textContent="*password field required";
         event.preventDefault();
     }
-    if (floatingPassword.value.length<4){
+    else if (floatingPassword.value.length<4){
         pass_warning.textContent="password atleast requires 5 characters";
         event.preventDefault();
     }
@@ -44,8 +49,8 @@ submitdetails.addEventListener("click",(event)=>{
         alert("confirm password");
         event.preventDefault();
     }
-    if(true){
- 
+    if(floatingInput.value!="" && floatingPassword.value!=undefined && floatingInput.value!=undefined && floatingPassword.value!=""){
+        event.preventDefault();
         let obj={
             firstname:firstname.value,
             lastname:lastname.value,
@@ -67,6 +72,8 @@ submitdetails.addEventListener("click",(event)=>{
 
         localStorage.setItem(`${firstname.value}`,JSON.stringify(obj));
          let emp_list=getemployee();
+
+         location.href = "http://127.0.0.1:5500/Assessment/success_registration.html";
     }
 
     
@@ -78,7 +85,3 @@ for (x of keys){
    let parse_obj=JSON.parse(each)
     console.log(parse_obj)
 }
-
-submitdetails.onclick=function () {
-    location.href = "http://127.0.0.1:5500/Assessment/success_registration.html";
-};

@@ -12,22 +12,28 @@ let floatingPassword=document.getElementById("floatingPassword");
 let loginid=document.getElementById("loginid");
 
 let  keys = Object.keys(localStorage);
-console.log(keys)
+console.log(keys);
+console.log(floatingInput.value);
+
 
 loginid.addEventListener("click",(event)=>{
-    if(floatingInput.value=="" || floatingInput.value==null){
+    event.preventDefault();
+    if(floatingInput.value=="" || floatingInput.value==undefined){
         user_warning.textContent="*Username field is required";
        event.preventDefault();
     }
-    if(floatingPassword.value=="" || floatingPassword==null){
+    if(floatingPassword.value=="" || floatingPassword.value==undefined){
         pass_warning.textContent="*Password field is required";
         event.preventDefault();
     }
-    if (floatingPassword.value.length<4){
+    else if (floatingPassword.value.length<4){
         pass_warning.textContent="password atleast requires 5 characters";
         event.preventDefault();
     }
-    if(true){
+    console.log(floatingInput.value);
+
+    if(floatingInput.value!="" && floatingPassword.value!=undefined && floatingInput.value!=undefined && floatingPassword.value!=""){
+        event.preventDefault();
         keys.map((employee)=>{
             let each= localStorage.getItem(employee);
             let parse_obj=JSON.parse(each);
