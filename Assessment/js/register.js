@@ -31,8 +31,27 @@ let lastname=document.getElementById("lastname");
 let address=document.getElementById("address");
 let phnumber=document.getElementById("phnumber");
 
+let fname_warning=document.getElementById("fname-warning");
+let lname_warning=document.getElementById("lname-warning");
+let address_warning=document.getElementById("address-warning")
+let number_warning=document.getElementById("number-warning")
+
 submitdetails.addEventListener("click",(event)=>{
     event.preventDefault();
+    if(firstname.value==""|| firstname.value==undefined){
+fname_warning.textContent="*First name is required"
+    }
+    if(lastname.value==""|| lastname.value==undefined){
+      lname_warning.textContent="*Last name is required"
+    }
+
+    if(address.value==""|| address.value==undefined){
+            address_warning.textContent="*Address is required"
+    }
+        if(phnumber.value==""|| phnumber.value==undefined){
+            number_warning.textContent="*Phone number is required"
+    }
+
     if(floatingInput.value=="" || floatingInput.value==undefined){
         user_warning.textContent="*Username field required";
         event.preventDefault();
