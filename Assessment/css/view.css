@@ -51,3 +51,15 @@
 .tabledata{
     text-align: center;
 }
+.editBtn{
+    margin: 5px;
+    width: 80px;
+    background-color:rgb(168, 145, 145) !important;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    border: 0px;
+    font-family: "Roboto";
+}
+.bottom-section{
+    background-color: rgb(77, 129, 121);
+}
